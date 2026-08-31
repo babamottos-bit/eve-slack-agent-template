@@ -8,4 +8,6 @@ export default slackChannel({
   credentials: connectSlackCredentials(
     process.env.SLACK_CONNECTOR ?? "slack/my-agent",
   ),
+  // Give the agent the latest thread messages without replaying its own replies.
+  threadContext: { since: "last-agent-reply" },
 });
