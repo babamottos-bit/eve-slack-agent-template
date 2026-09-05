@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.9.3",
+    "just-bash": "^3.4.2",
     "typescript": "7.0.1-rc"
   }
 }
